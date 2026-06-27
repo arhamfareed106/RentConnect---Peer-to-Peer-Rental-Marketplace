@@ -108,5 +108,19 @@ temp/
 # Webdev artifacts (checkpoint zips, migrations, etc.)
 .webdev/
 
-# Manus version file (auto-generated, not part of source)
-client/public/__manus__/version.json
+# Manus debug/monitoring tool (not needed in production)
+client/public/__manus__/
+.manus-logs/
+
+# AI assistant tool folders (development only)
+.qwen/
+.qoder/
+
+# Uploaded files (should not be in git)
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Temporary deployment files
+DEPLOY_TRIGGER.txt
+*.bat
+deploy-*.sh
